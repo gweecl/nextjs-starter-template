@@ -1,6 +1,9 @@
 import { Provider } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
 import store from '../store'
-import '../styles/globals.css'
+import theme from '../styles/theme'
+import "../styles/scss/app.scss";
+// import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
@@ -8,7 +11,9 @@ function MyApp({ Component, pageProps }) {
 
   return getLayout(
     <Provider store={store}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Provider>
   )
 }
