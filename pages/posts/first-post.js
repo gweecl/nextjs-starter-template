@@ -18,7 +18,7 @@ export default function FirstPost() {
 
 FirstPost.getLayout = function getLayout(page) {
   return (
-    <Layout home>
+    <Layout>
       {page}
     </Layout>
   )

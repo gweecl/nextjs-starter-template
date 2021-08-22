@@ -3,7 +3,6 @@ import { ThemeProvider } from 'styled-components'
 import store from '../store'
 import theme from '../styles/theme'
 import "../styles/scss/app.scss";
-// import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
